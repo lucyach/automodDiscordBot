@@ -25,6 +25,7 @@ async def on_message(message):
         violations[message.author] += 1
       channel = client.get_channel(783529978532593685) ## replace this with your staff channel id
       await channel.send('Snitch message: ' + str(message.author) + ' said "' + str(msg) + '" in channel #' + str(message.channel) + '. This is their violation #' + str(violations[message.author]))
+    
     if "bitch" in msg:
       await message.delete()
       await message.channel.send(str(message.author) + ", please avoid using that language.")
@@ -34,6 +35,7 @@ async def on_message(message):
         violations[message.author] += 1
       channel = client.get_channel(783529978532593685) ## replace this with your staff channel id
       await channel.send('Snitch message: ' + str(message.author) + ' said "' + str(msg) + '" in channel #' + str(message.channel) + '. This is their violation #' + str(violations[message.author]))
+    
     if "queer" in msg:
       await message.delete()
       await message.channel.send(str(message.author) + ", please avoid using that language if you are cishet.")
@@ -43,6 +45,7 @@ async def on_message(message):
         violations[message.author] += 1
       channel = client.get_channel(783529978532593685) ## replace this with your staff channel id
       await channel.send('Snitch message: ' + str(message.author) + ' said "' + str(msg) + '" in channel #' + str(message.channel) + '. This is their violation #' + str(violations[message.author]) + '. Note that this word is special and it is okay for LGBT+ people to use.')
+    
     if "cunt" in msg:
       await message.delete()
       await message.channel.send(str(message.author) + ", please avoid using that language.")
@@ -52,6 +55,17 @@ async def on_message(message):
         violations[message.author] += 1
       channel = client.get_channel(783529978532593685) ## replace this with your staff channel id
       await channel.send('Snitch message: ' + str(message.author) + ' said "' + str(msg) + '" in channel #' + str(message.channel) + '. This is their violation #' + str(violations[message.author]))
+    
+    if "pussy" in msg:
+      await message.delete()
+      await message.channel.send(str(message.author) + ", please avoid using that language.")
+      if message.author not in violations:
+        violations[message.author] = 1
+      else:
+        violations[message.author] += 1
+      channel = client.get_channel(783529978532593685) ## replace this with your staff channel id
+      await channel.send('Snitch message: ' + str(message.author) + ' said "' + str(msg) + '" in channel #' + str(message.channel) + '. This is their violation #' + str(violations[message.author]))
+    
     if "retard" in msg:
       await message.delete()
       await message.channel.send(str(message.author) + ", please avoid using that language if you are abled.")
@@ -61,6 +75,7 @@ async def on_message(message):
         violations[message.author] += 1
       channel = client.get_channel(783529978532593685) ## replace this with your staff channel id
       await channel.send('Snitch message: ' + str(message.author) + ' said "' + str(msg) + '" in channel #' + str(message.channel) + '. This is their violation #' + str(violations[message.author]) + '. Note that this word is special and it is okay for disabled people to use.')
+    
     if "fag" in msg:
       await message.delete()
       await message.channel.send(str(message.author) + ", please avoid using that language if you are heterosexual.")
@@ -70,6 +85,17 @@ async def on_message(message):
         violations[message.author] += 1
       channel = client.get_channel(783529978532593685) ## replace this with your staff channel id
       await channel.send('Snitch message: ' + str(message.author) + ' said "' + str(msg) + '" in channel #' + str(message.channel) + '. This is their violation #' + str(violations[message.author]) + '. Note that this word is special and it is okay for homosexual people to use.')
+    
+    if "tranny" in msg:
+      await message.delete()
+      await message.channel.send(str(message.author) + ", please avoid using that language if you are cisgender.")
+      if message.author not in violations:
+        violations[message.author] = 1
+      else:
+        violations[message.author] += 1
+      channel = client.get_channel(783529978532593685) ## replace this with your staff channel id
+      await channel.send('Snitch message: ' + str(message.author) + ' said "' + str(msg) + '" in channel #' + str(message.channel) + '. This is their violation #' + str(violations[message.author]) + '. Note that this word is special and it is okay for transgender people to use.')
+    
     if "bad word" in msg:
       await message.delete()
       await message.channel.send(str(message.author) + ", please avoid using that language.")
