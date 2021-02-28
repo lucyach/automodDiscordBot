@@ -96,15 +96,7 @@ async def on_message(message):
       channel = client.get_channel(783529978532593685) ## replace this with your staff channel id
       await channel.send('Snitch message: ' + str(message.author) + ' said "' + str(msg) + '" in channel #' + str(message.channel) + '. This is their violation #' + str(violations[message.author]) + '. Note that this word is special and it is okay for transgender people to use.')
     
-    if "bad word" in msg:
-      await message.delete()
-      await message.channel.send(str(message.author) + ", please avoid using that language.")
-      if message.author not in violations:
-        violations[message.author] = 1
-      else:
-        violations[message.author] += 1
-      channel = client.get_channel(783529978532593685) ## replace this with your staff channel id
-      await channel.send('Snitch message: ' + str(message.author) + ' said "' + str(msg) + '" in channel #' + str(message.channel) + '. This is their violation #' + str(violations[message.author]))
+  
     
 
 keep_alive()
