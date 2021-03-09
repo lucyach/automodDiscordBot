@@ -6,7 +6,7 @@ client = discord.Client()
 violations = {}
 bad_words = ["fuck", "bitch", "cunt", "pussy"]
 specialBadWords = ["queer", "retard", "fag", "tranny"]
-specialResponses = [", please avoid using that language is you are cishet.", ", please avoid using that language if you are abled.", ", please avoid using that language if you are heterosexual.", ", please avoid using that language if you are cisgender."]
+specialResponses = [", please avoid using that language if you are cishet.", ", please avoid using that language if you are abled.", ", please avoid using that language if you are heterosexual.", ", please avoid using that language if you are cisgender."]
 specialSnitch = [". Note that this word is special and it is okay for LGBT+ people to use.", ". This is their violation #' + str(violations[message.author]) + '. Note that this word is special and it is okay for disabled people to use.", ". Note that this word is special and it is okay for homosexual people to use.", ". Note that this word is special and it is okay for transgender people to use."]
 
 @client.event
