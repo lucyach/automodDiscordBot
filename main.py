@@ -45,7 +45,5 @@ async def on_message(message):
           channel = client.get_channel(783529978532593685) ## replace this with your staff channel id
           await channel.send('Snitch message: ' + str(message.author) + ' said "' + str(msg) + '" in channel #' + str(message.channel) + '. This is their violation #' + str(violations[message.author]) + specialSnitch[i])
 
-  
-
 keep_alive()
 client.run(os.getenv('TOKEN'))
