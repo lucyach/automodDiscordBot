@@ -4,8 +4,8 @@ from keep_alive import keep_alive
 
 client = discord.Client()
 violations = {}
-blacklist = ["fuck", "bitch", "cunt", "pussy"]
-specialBlacklist = ["queer", "retard", "fag", "tranny"]
+
+## for github viewers, I have removed the lists of words because it's crude:/
 specialResponses = [", please avoid using that language if you are cishet.", ", please avoid using that language if you are abled.", ", please avoid using that language if you are heterosexual.", ", please avoid using that language if you are cisgender."]
 specialSnitch = [". Note that this word is special and it is okay for LGBT+ people to use.", ". This is their violation #' + str(violations[message.author]) + '. Note that this word is special and it is okay for disabled people to use.", ". Note that this word is special and it is okay for homosexual people to use.", ". Note that this word is special and it is okay for transgender people to use."]
 
