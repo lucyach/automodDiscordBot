@@ -45,5 +45,10 @@ async def on_message(message):
           channel = client.get_channel(783529978532593685) ## replace this with your staff channel id
           await channel.send('Snitch message: ' + str(message.author) + ' said "' + str(msg) + '" in channel #' + str(message.channel) + '. This is their violation #' + str(violations[message.author]) + specialSnitch[i])
 
+    ## for github viewers, this is a joke for my friend. ignore.
+    if str(message.author) == "Beni#6609":
+      if 'bark' in msg:
+        await message.channel.send('Beni people might respect you more if the words that came out of your mouth where intelligent and when poeple asked you a question you auctually responded instead of saying "BARK BARK". Face it beni your not a dog. Dogs are cute and your not')
+
 keep_alive()
 client.run(os.getenv('TOKEN'))
